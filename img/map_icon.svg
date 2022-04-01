@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.9832" height="30.00192" viewBox="0 0 20.9832 30.00192">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5e9fd7;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>map_icon</title>
+  <g id="レイヤー_2" data-name="レイヤー 2">
+    <g id="レイヤー_2-2" data-name="レイヤー 2">
+      <path class="cls-1" d="M20.9832,10.4916c0,10.03845-10.4916,19.51032-10.4916,19.51032S0,20.53005,0,10.4916a10.4916,10.4916,0,0,1,20.9832,0Z"/>
+      <ellipse class="cls-2" cx="10.4916" cy="11.18702" rx="3.86554" ry="3.84179"/>
+    </g>
+  </g>
+</svg>

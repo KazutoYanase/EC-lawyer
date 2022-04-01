@@ -1,0 +1,26 @@
+/* base width */
+$base-width: 1024px;
+
+/* breakpoint
+0 <= smart phone < 768px
+768px <= tablet < 992px
+992px <= desktop < 1200px
+1200px <= wide screen
+ */
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+/* color */
+
+/* hover style (use @extend) */
+$def-opacity-rate: .65;
+%hover-opacity {
+	transition: .3s ease-in-out;
+	opacity: 1;
+	@include min-screen($breakpoint-sm) {
+		&:hover {
+			opacity: $def-opacity-rate;
+		}
+	}
+}

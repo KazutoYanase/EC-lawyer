@@ -1,0 +1,122 @@
+.article__wrap {
+	width: $base-width;
+	margin: 24px auto;
+
+	//for smartphone
+	@include max-screen($breakpoint-sm - 1) {
+		width: 100%;
+	}
+}
+
+.article__header {
+	box-sizing: border-box;
+	padding: 0 16px 24px;
+	border-bottom: 1px solid #dbdbdb;
+	.article__header__info {
+		margin-bottom: 16px;
+		color: #b4b4b4;
+	}
+	.article__header__time {
+		display: inline-block;
+	}
+	.article__header__category {
+		display: inline-block;
+		&:before {
+			content: "/";
+			display: inline-block;
+			padding: 0 8px;
+		}
+		a {
+			color: #b4b4b4;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.article__header__title {
+		margin: 0;
+		padding: 0;
+		font-size: 2.14rem;
+		font-weight: bold;
+		line-height: 1.2;
+	}
+	.article__header__name {
+		margin-top: 16px;
+		color: #b4b4b4;
+		text-align: right;
+	}
+
+	//for smartphone
+	@include max-screen($breakpoint-sm - 1) {
+		.article__header__title {
+	    font-size: 1.857rem;
+		}
+		.article__header__info,
+		.article__header__name {
+			font-size: .857rem;
+		}
+	}
+}
+
+.article__body {
+	padding: 40px 16px 56px;
+	border-bottom: 1px solid #dbdbdb;
+	@extend %editor-style;
+}
+
+.article__footer {
+	padding: 32px 16px;
+	overflow: hidden;
+	.article__footer__sns {
+		float: right;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		>li {
+			display: inline-block;
+			margin: 0 4px;
+		}
+	}
+	.article__footer__back-btn {
+		position: relative;
+		float: left;
+		a {
+			padding-left: 26px;
+			color: #0058a5;
+			text-decoration: none;
+			&:hover {
+				opacity: .7;
+			}
+		}
+		svg {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -8px;
+			fill: #0058a5;
+			vertical-align: middle;
+			transition: all .2s ease-in-out;
+		}
+		span {
+			vertical-align: middle;
+		}
+		&:hover {
+			svg {
+				left: -6px;
+			}
+		}
+	}
+
+	//for smartphone
+	@include max-screen($breakpoint-sm - 1) {
+		.article__footer__back-btn {
+			float: none;
+			margin-top: 24px;
+		}
+		.article__footer__sns {
+			float: none;
+			text-align: center;
+		}
+	}
+}

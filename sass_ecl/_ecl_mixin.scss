@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+@mixin e($name) {
+	@at-root &-#{$name} {
+		@content;
+	}
+}
+$color: rgba(#040404,1.0);
+$color-key: rgba(#ff931e,1.0);

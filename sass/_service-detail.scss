@@ -1,0 +1,335 @@
+@charset "UTF-8";
+.service-contents__detail {
+	padding: 56px 0 24px;
+	&.training .service-contents__detail__text {
+		padding-bottom: 56px;
+	}
+	//for smartphone
+	@include max-screen($breakpoint-sm - 1) {
+		padding: 40px 0 16px;
+	}
+}
+
+.service-contents__detail__text {
+	max-width: 940px;
+	margin: 0 auto;
+	//for smartphone
+	@include max-screen($breakpoint-sm - 1) {
+		padding: 0 14px;
+	}
+}
+.service-contents__detail__banner {
+	margin: 80px auto 0;
+	text-align: center;
+	a:hover {
+  	opacity: .8;
+  }
+  //for smartphone
+	@include max-screen($breakpoint-sm - 1) {
+		padding: 0 14px;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.case-study__cont {
+	max-width: $base-width;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 32px 40px;
+	background: #f2f2f2;
+	h3 {
+		padding-bottom: 32px;
+		border-bottom: 1px solid #ccc;
+		font-size: 1.285rem;
+		font-weight: bold;
+		text-align: center;
+	}
+	dl {
+		padding-top: 16px;
+		dt {
+			padding-left: 10px;
+			border-left: 4px solid #0058a5;
+			font-weight: bold;
+		}
+		dd {
+			margin: 0;
+			padding: 16px 0 0;
+		}
+	}
+	//for smartphone
+	@include max-screen($breakpoint-sm - 1) {
+		padding: 24px 14px;
+	}
+}
+
+.how-to__timeline {
+	margin-top: 68px;
+	border-top: 1px solid #d4d4d4;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		width: $base-width;
+		height: 46px;
+		box-sizing: border-box;
+		margin-top: -46px;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 0;
+		list-style: none;
+		li {
+			position: relative;
+			width: 330px;
+			color: #0058a5;
+			font-weight: bold;
+			text-align: center;
+			&:before,&:after {
+				content: "";
+				position: absolute;
+				display: block;
+			}
+			&:before {
+				bottom: -15px;
+				left: 50%;
+				width: 30px;
+				height: 30px;
+				margin-left: -15px;
+				border-radius: 15px;
+				background: rgba(11,133,210,.1);
+			}
+			&:after {
+				bottom: -7px;
+				left: 50%;
+				width: 14px;
+				height: 14px;
+				margin-left: -7px;
+				border-radius: 8px;
+				background: #0b85d2;
+			}
+		}
+	}
+}
+
+.how-to__cont {
+	margin-top: 40px;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		width: $base-width;
+		box-sizing: border-box;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 0;
+		list-style: none;
+		li {
+			position: relative;
+			width: 330px;
+			box-sizing: border-box;
+			padding: 16px 16px 48px 37px;
+			border: 1px solid #999;
+			@for $i from 1 through 5 {
+			  &.bg_0#{$i} .how-to__cont__inner {
+			    background-image: url(../img/num_0#{$i}.png);
+			  }
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: inline-block;
+				width: 6px;
+				height: 80px;
+				background: #0058a5;
+			}
+			.how-to__cont__inner {
+				background: no-repeat right top;
+			}
+		}
+	}
+	.how-to__title {
+		padding-top: 28px;
+		color: #0058a5;
+		font-size: 2rem;
+	}
+	.how-to__detail {
+		padding-top: 16px;
+		em {
+			font-weight: bold;
+			font-style: normal;
+		}
+	}
+	.how-to__pml-pc {
+		width: $base-width;
+		margin: 120px auto 0;
+		padding: 16px 0;
+		background: #185ec2;
+		color: #fff;
+		font-size: 1.714rem;
+		text-align: center;
+	}
+	.how-to__com-pml-pc {
+		width: $base-width;
+		margin: 88px auto 0;
+		padding: 16px 0;
+		background: #5b9ed9;
+		color: #fff;
+		font-size: 1.714rem;
+		text-align: center;
+	}
+	.how-to__pml__traning {
+		position: relative;
+		width: $base-width;
+		margin: 120px auto 88px;
+		padding: 16px 0;
+		background: #185ec2;
+		color: #fff;
+		font-size: 1.714rem;
+		text-align: center;
+		dd {
+			position: absolute;
+			top: -40px;
+			left: 50%;
+			width: $base-width;
+			margin-left: -($base-width / 2);
+			color: #0058a5;
+			font-size: 1.125rem;
+			font-weight: bold;
+			&:before {
+				content: "";
+				position: absolute;
+				top: -64px;
+				left: 50%;
+				width: 106px;
+				height: 58px;
+				margin-left: -53px;
+				background: url(../img/arrow-top01@2x.png) no-repeat center top;
+				background-size: 106px;
+			}
+		}
+	}
+	//for pc
+	@include min-screen($breakpoint-sm) {
+		.how-to__pml {
+			position: absolute;
+			left: 50%;
+			bottom: -80px;
+			width: 330px;
+			height: 2em;
+			margin: 0 0 0 -165px;
+			color: #2270b5;
+			font-size: 1.125rem;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.4;
+			&.training__cont {
+				color: #2270b5;
+				&:before {
+					background-image: url(../img/arrow-top02@2x.png);
+				}
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				top: -64px;
+				left: 50%;
+				width: 106px;
+				height: 58px;
+				margin-left: -53px;
+				background: url(../img/arrow-top01@2x.png) no-repeat center top;
+				background-size: 106px;
+			}
+			dd {
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+	//for smartphone
+	@include max-screen($breakpoint-sm - 1) {
+		margin-top: 0;
+		padding: 0 14px;
+		ul {
+			display: block;
+			width: 100%;
+			margin: 0;
+			li {
+				width: 100%;
+				margin-bottom: 24px;
+				padding: 16px 24px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				&:before {
+					width: 4px;
+    			height: 68px;
+				}
+			}
+		}
+		.how-to__pml {
+			margin: 16px 0 0;
+			padding: 40px 0 0;
+			background: url(../img/arrow-top01@2x.png) no-repeat center top;
+			background-size: 70px;
+			position: static;
+			dt {
+				margin: 0 0 12px;
+				padding: 12px;
+		    background: #185ec2;
+		    color: #fff;
+			}
+			dd {
+				margin: 0 0 8px;
+				padding: 0;
+				color: #185ec2;
+				font-weight: bold;
+				&:before {
+					content: "・";
+				}
+			}
+			&.training__cont {
+				background-image: url(../img/arrow-top02@2x.png);
+				dt {
+					background: #5b9ed9;
+				}
+				dd {
+					color: #2270b5;
+				}
+			}
+		}
+		.how-to__title {
+			padding-top: 20px;
+			font-size: 1.8rem;
+		}
+	}
+}
+
+
+.related-columns {
+	box-sizing: border-box;
+	padding: 64px 0;
+	background: #f2f2f2;
+	.section-title--second {
+		padding-bottom: 64px;
+	}
+	.column__list {
+		width: $base-width;
+		box-sizing: border-box;
+		margin: 0 auto;
+	}
+
+	//for smartphone
+	@include max-screen($breakpoint-sm - 1) {
+		margin-top: 40px;
+		padding: 48px 0;
+		.section-title--second {
+			padding-bottom: 48px;
+		}
+		.column__list {
+			width: 100%;
+			padding: 0 14px;
+		}
+	}
+}

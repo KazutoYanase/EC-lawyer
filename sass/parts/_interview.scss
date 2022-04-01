@@ -1,0 +1,39 @@
+//interview
+.interview {
+	.interview__list {
+		max-width: 1600px;
+		margin: 48px auto 0;
+		padding: 0;
+		text-align: center;
+		list-style: none;
+		li {
+			width: 496px;
+			max-width: 46%;
+			display: inline-block;
+			margin: 0 8px 32px;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		a {
+      transition: all .3s ease-in-out;
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
+	.btn {
+		margin-top: 8px;
+	}
+	//for smartphone
+	@include max-screen($breakpoint-sm - 1) {
+		.interview__list {
+			margin-top: 28px;
+			li {
+				max-width: 90%;
+				margin-bottom: 24px;
+			}
+		}
+	}
+}

@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* --------------------------
+ break piont
+-------------------------- */
+/* --------------------------
+ pixel ratio
+-------------------------- */
+/* base width */
+/* breakpoint
+0 <= smart phone < 768px
+768px <= tablet < 992px
+992px <= desktop < 1200px
+1200px <= wide screen
+ */
+/* color */
+/* hover style (use @extend) */
+.mce-content-body h1, .mce-content-body h2 {
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.mce-content-body h3, .mce-content-body h4 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.mce-content-body h5, .mce-content-body h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.mce-content-body p {
+  margin: 1rem 0;
+}
+
+.mce-content-body strong {
+  font-weight: bold;
+}
+
+.mce-content-body em {
+  font-style: italic;
+}
+
+.mce-content-body .wp-caption {
+  width: 88%;
+  margin: 0 auto 1em;
+}
+
+.mce-content-body .wp-caption img {
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.mce-content-body .wp-caption .wp-caption-text {
+  padding: 0;
+  font-size: .875rem;
+  color: #999;
+}
+
+.mce-content-body ul, .mce-content-body ol {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.mce-content-body ul li, .mce-content-body ol li {
+  margin: 1rem 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.mce-content-body code {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 0 1rem;
+  padding: 20px;
+  border: 1px solid #eee;
+  background: #f2f2f2;
+}
+
+.mce-content-body blockquote {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 0 1rem;
+  padding: 40px 24px;
+  background: #f2f2f2;
+}
+
+.mce-content-body blockquote:before, .mce-content-body blockquote:after {
+  position: absolute;
+  display: inline-block;
+  color: #d7d7d7;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.mce-content-body blockquote:before {
+  content: "“";
+  top: 8px;
+  left: 8px;
+  vertical-align: top;
+}
+
+.mce-content-body blockquote:after {
+  content: "”";
+  right: 8px;
+  vertical-align: bottom;
+}
+
+.mce-content-body blockquote.bq-literature {
+  padding: 24px;
+}
+
+.mce-content-body blockquote.bq-literature:before, .mce-content-body blockquote.bq-literature:after {
+  content: none;
+}
+
+.mce-content-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mce-content-body .aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.mce-content-body .alignright {
+  float: right;
+  margin-left: 16px;
+}
+
+.mce-content-body .alignleft {
+  float: left;
+  margin-right: 16px;
+}
+
+.mce-content-body iframe {
+  max-width: 100%;
+}
+
+.mce-content-body pre {
+  white-space: pre-line;
+}
+
+.mce-content-body .clearfix {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.mce-content-body .clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media screen and (max-width: 767px) {
+  .mce-content-body .wp-caption {
+    width: 100%;
+  }
+}
+
+.mce-content-body {
+  font: 14px/1.6 'Yu Gothic',Meiryo,'メイリオ','ＭＳ Ｐゴシック',Helvetica,Sans-Serif;
+}
+
+.mce-content-body a {
+  color: #8a1085;
+}

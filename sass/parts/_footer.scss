@@ -1,0 +1,148 @@
+//global footer
+.g-footer {
+	box-sizing: border-box;
+	padding: 52px 0 24px;
+	background: #033481;
+	a {
+		color: #fff;
+		text-decoration: none;
+		&:hover {
+			opacity: .7;
+		}
+	}
+.top-main-visual__list {
+    width: 1024px;
+    margin: 0 auto 4rem;
+}
+	.g-footer__links {
+		display: flex;
+		width: $base-width;
+		margin: 0 auto;
+	}
+	dl, ul {
+		margin: 0 80px 0 0;
+		padding: 0;
+		list-style: none;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	li {
+		margin-bottom: 24px;
+		font-weight: bold;
+		line-height: 1;
+	}
+	dt{
+		margin-bottom: 16px;
+		font-weight: bold;
+		line-height: 1;
+	}
+	dd {
+		margin: 0 0 16px 1em;
+		font-size: .875rem;
+		line-height: 1;
+	}
+
+	.g-footer__map {
+		&__body {
+			max-width: 1024px;
+			height: 350px;
+			margin: 24px auto;
+		}
+	}
+
+	.g-footer__logo {
+		text-align: center;
+		img {
+			width: 200px;
+		}
+	}
+
+	.g-footer__address {
+		margin-top: 24px;
+		color: #fff;
+		font-size: .875rem;
+		text-align: center;
+	}
+
+	// smaller than contents-width
+	@include screen($breakpoint-sm - 1, $base-width + 48) {
+		padding: 52px 24px;
+		.g-footer__links {
+			width: auto;
+		}
+	}
+	//for smartphone
+	@include max-screen($breakpoint-sm - 1) {
+		padding: 23px 14px;
+        .top-main-visual__list {
+            width: auto;
+            margin: 0 auto .6rem;
+            ul li {
+            margin: 0 auto 1.2rem;
+            padding: 0;
+            }
+        }
+		.g-footer__links {
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0;
+		}
+		dl, ul {
+			margin-right: 0;
+		}
+		dd:last-child {
+			margin-bottom: 24px;
+		}
+	}
+}
+
+.sub-footer {
+    margin: 5.4rem 0 0;
+    padding: 2.4rem 0;
+    background: #f2f2f2;
+    h3 {
+        font-size: 1.8rem;
+        color: #033481;
+    }
+    .top-main-visual__list {
+        width: $base-width;
+        margin: 0 auto;
+    ul {
+        flex-wrap: wrap;
+        background: inherit;
+        li {
+            flex: 1 48%;
+            margin: 1%;
+        }
+    }
+    }
+	.g-footer__links {
+		display: flex;
+		width: $base-width;
+		margin: 0 auto;
+        padding: 0;
+        list-style: none;
+	}
+@include max-screen(600px) {
+    h3 {
+        font-size: 1.4rem;
+    }
+        .top-main-visual__list,.g-footer__links {
+            width: auto;
+        }
+        .top-main-visual__list ul li {
+            flex: 1 100%;
+            margin: 0 0 4%;
+        }
+        .g-footer__links li {
+            width: 48%;
+            margin: 1%;
+        }
+    }
+}
+
+.related-columns + .g-footer  {
+	margin-top: 0;
+}

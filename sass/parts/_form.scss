@@ -1,0 +1,222 @@
+.pamphlet {
+	&__text {
+    margin-top: 48px;
+    padding: 0 14px;
+    text-align: center;
+    + .pamphlet__text {
+    	margin-top: 24px;
+    }
+	}
+	&__form {
+		margin-top: 32px;
+		dl,dt,dd {
+			margin: 0;
+			padding: 0;
+		}
+	}
+	&__table {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		box-sizing: border-box;
+		border-collapse:collapse;
+		dl {
+			display:table-row;
+			border: 1px solid #d2d2d2;
+			& + dl {
+				border-top: none;
+			}
+		}
+		dt,dd {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		dt {
+			position: relative;
+			width: 30%;
+			box-sizing: border-box;
+			padding: 16px 60px 16px 16px;
+			border-right: 1px solid #d2d2d2;
+			background: #e5e9eb;
+			font-weight: bold;
+			.sub_text {
+				color: #cc141c;
+				font-size: 11px;
+			}
+		}
+		dd {
+			width: 70%;
+			box-sizing: border-box;
+			padding: 16px;
+		}
+		input[type="file"] {
+			width: 100%;
+		}
+		input[type="text"],
+		textarea,
+		input[type="email"],
+		input[type="tel"]{
+			width: 100%;
+			box-sizing: border-box;
+			margin: 0px;
+			padding: 10px;
+			border: 1px solid #c3c3c3;
+			border-radius: 3px;
+	    word-break: break-all;
+	    font-size: 14px;
+	    &.wpcf7c-conf {
+	    	background: #fff !important;
+	    	border: none;
+	    	&::-webkit-input-placeholder{
+	    		color: #fff;
+	    	}
+	    	&:-moz-placeholder {
+	    		color: #fff;
+	    	}
+	    	&:-webkit-autofill {
+  		    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+	    	}
+	    }
+		}
+		.wpcf7-list-item {
+			display: block;
+			margin:0 0 8px;
+		}
+		.wpcf7-list-item-label {
+			margin-left: 4px;
+		}
+		input::-webkit-input-placeholder {
+			color: #ccc;
+			font-size: 14px;
+		}
+		input:-moz-placeholder {
+			color: #ccc;
+			font-size: 14px;
+		}
+	}
+	&__required,
+	&__optional {
+		position: absolute;
+		top: 50%;
+		right: 12px;
+		height: 24px;
+		margin-top: -12px;
+		padding: 0 8px;
+		font-size: 12px;
+		line-height: 24px;
+		color: #fff;
+	}
+	&__required {
+		background-color: #ce0e0e;
+	}
+	&__optional {
+		background-color: #ccc;
+	}
+	&__question-ttl {
+		margin: 20px 0 10px;
+		font-weight: bold;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	.form-note {
+		margin: 24px auto 0;
+		padding: 24px 32px;
+		background: #f2f2f2;
+		&-ttl {
+			margin-bottom: 8px;
+			font-size: 14px !important;
+			font-weight: bold;
+		}
+		p {
+			font-size: 12px;
+		}
+	}
+	.form-btn {
+		margin-top: 32px;
+		text-align: center;
+		.wpcf7-confirm,
+		.wpcf7-submit {
+			display: inline-block;
+			width: 330px;
+			max-width: 90%;
+			height: 60px;
+			box-sizing: border-box;
+			border: none;
+			background: #ff6f00;
+			color: #fff;
+			font-size: 1.125rem;
+			text-align: center;
+			text-decoration: none;
+			line-height: 60px;
+			opacity: 1;
+			transition: all .2s ease-in-out;
+			cursor: pointer;
+			&:hover {
+		    background: #ff9a4b;
+			}
+		}
+		.wpcf7-back {
+	    display: inline-block;
+	    width: 330px;
+	    max-width: 90%;
+	    height: 60px;
+	    box-sizing: border-box;
+	    margin-right: 24px;
+	    border: none;
+	    background: #ccc;
+	    color: #fff;
+	    font-size: 1.125rem;
+	    text-align: center;
+	    text-decoration: none;
+	    line-height: 60px;
+	    opacity: 1;
+	    transition: all .2s ease-in-out;
+	    cursor: pointer;
+	    &:hover {
+		    background: #bbb;
+			}
+		}
+	}
+
+	&__download {
+		margin-top: 48px;
+		text-align: center;
+		a {
+			position: relative;
+			display: inline-block;
+			width: 270px;
+			height: 50px;
+			box-sizing: border-box;
+			background: #033481;
+			color: #fff;
+			font-size: 1.125rem;
+			text-align: center;
+			text-decoration: none;
+			line-height: 50px;
+			transition: background .2s ease-in-out;
+		}
+	}
+
+//for smartphone
+	@include max-screen(600px) {
+		.pamphlet__required,
+		.pamphlet__optional {
+			position: static;
+			display: block;
+			width: 2em;
+			margin-top: 4px;
+		}
+		&__text {
+			text-align: left;
+		}
+		&__table {
+			dt {
+				padding-right: 16px;
+			}
+		}
+		.wpcf7c-elm-step2 {
+			width: 42% !important;
+		}
+	}
+}

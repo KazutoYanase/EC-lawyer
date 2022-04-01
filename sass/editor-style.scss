@@ -1,0 +1,16 @@
+// rules
+@import "libs/mixin";
+@import "libs/variable";
+
+//parts
+@import "parts/editor";
+
+//include editor-style
+.mce-content-body {
+	@extend %editor-style;
+	font: 14px/1.6 'Yu Gothic',Meiryo,'メイリオ','ＭＳ Ｐゴシック',Helvetica,Sans-Serif;
+
+	a {
+		color: #8a1085;
+	}
+}

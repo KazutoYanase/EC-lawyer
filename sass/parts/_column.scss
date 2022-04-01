@@ -1,0 +1,115 @@
+//column
+//.home {
+//    .column {
+//    padding: 0 0 6.4rem;
+//    }
+//}
+.column {
+    padding: .1rem 0 6.4rem;
+	.column__list {
+		display: flex;
+		margin-top: 32px;
+		padding: 0;
+		list-style: none;
+		li {
+			width: 330px;
+			margin: 0 8px;
+			overflow: hidden;
+		}
+		.column__list__text {
+			width: 310px;
+			border-left: 0px solid #0058a5;
+			transition: all .2s linear;
+			time {
+				display: inline-block;
+				margin-bottom: 6px;
+				color: #b4b4b4;
+				font-size: .857rem;
+			}
+			.column__list__category {
+				display: inline-block;
+				margin-left: 8px;
+				padding: 4px 9px;
+				background: #5b9ed9;
+				color: #fff;
+				font-size: .785rem;
+				line-height: 1;
+			}
+		}
+		.column__list__title {
+			font-weight: bold;
+		}
+		.column__list__img {
+			position: relative;
+			height: 215px;
+			margin-top: 20px;
+			text-align:center;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.column__list__arrow {
+			position: absolute;
+			right: -66px;
+			bottom: 0;
+			width: 66px;
+			height: 66px;
+			box-sizing: border-box;
+			padding: 25px 0 0;
+			background: #0058a5;
+			text-align: center;
+			transition: all .3s ease-in-out;
+			svg {
+				fill: #fff;
+			}
+		}
+		a {
+			color: #404040;
+			text-decoration: none;
+			transition: all .3s ease-in-out;
+			&:hover {
+				color: #0058a5;
+				.column__list__text {
+					padding-left: 12px;
+					border-width: 6px;
+				}
+				.column__list__title,time {
+					color: #0058a5;
+				}
+				.column__list__category {
+					background-color: #0058a5;
+				}
+				.column__list__arrow {
+					right: 0;
+				}
+			}
+		}
+	}
+
+	//for smartphone
+	@include max-screen($breakpoint-sm - 1) {
+		.column__list {
+			display: block;
+			margin-top: 28px;
+			padding: 0 14px;
+			li {
+				width: 100%;
+				margin: 0 0 32px;
+			}
+			.column__list__text {
+				width: auto;
+			}
+			.column__list__img {
+				margin-top: 10px;
+			}
+			a:hover {
+				.column__list__text {
+					padding-left: 0;
+					border: none;
+				}
+			}
+		}
+	}
+}

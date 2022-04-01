@@ -1,0 +1,8 @@
+.form-wrap {
+	text-align:center;
+	margin-bottom: -64px;
+	//for smartphone
+	@include max-screen($breakpoint-sm - 1) {
+		margin-bottom: -35px;
+	}
+}

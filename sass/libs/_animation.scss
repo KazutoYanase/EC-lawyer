@@ -1,0 +1,153 @@
+/*---------------------------
+  animation_original
+---------------------------*/
+
+//animation
+.animated{
+  opacity: 0;
+}
+.duration-default {
+  animation-duration: 1s;
+}
+.delay-short {
+  animation-delay: .2s;
+}
+.delay-medium {
+  animation-delay: .8s;
+}
+
+//animated line
+.animated-line {
+  position: relative;
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;  
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 2px;
+    background: #b8b8b8;
+    transition: 1.2s;
+  }
+  &.fadeIn:before {
+    width: 100%;
+  }
+}
+.animated-line-top {
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;  
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 2px;
+    background: #b8b8b8;
+    transition: 1.2s;
+  }
+  &.fadeIn:before {
+    width: 100%;
+  }
+}
+
+//slideup 50px & fadein
+@-webkit-keyframes slideFadeInUp50 {
+  from {
+    transform: translate3d(0, 50px, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes slideFadeInUp50 {
+  from {
+    transform: translate3d(0, 50px, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.slideFadeInUp50 {
+  -webkit-animation-name: slideFadeInUp50;
+  animation-name: slideFadeInUp50;
+}
+
+//original zoomIn
+@-webkit-keyframes zoomInReduce {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.8, .8, .8);
+    transform: scale3d(.8, .8, .8);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomInReduce {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.8, .8, .8);
+    transform: scale3d(.8, .8, .8);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomInReduce {
+  -webkit-animation-name: zoomInReduce;
+  animation-name: zoomInReduce;
+}
+
+//original fadeInLeft
+@-webkit-keyframes fadeInBottomReduce {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInBottomReduce {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInBottomReduce {
+  -webkit-animation-name: fadeInBottomReduce;
+  animation-name: fadeInBottomReduce;
+}
