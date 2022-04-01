@@ -1720,6 +1720,18 @@ div.wpcf7 .ajax-loader {
   margin-bottom: 30px;
 }
 
+/* 2022-04-01追加分 */
+.ecl-pg-rumourslist {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.ecl-pg-rumourslist ul li {
+  list-style: disc;
+  padding: 0 0 30px;
+  font-size: 1.5em;
+}
+
 @media screen and (max-width: 769px) {
   .pc {
     display: none
@@ -2615,4 +2627,15 @@ div.wpcf7 .ajax-loader {
     margin-bottom: 30px;
   }
 
+  /* 2022-04-01追加分 */
+  .ecl-pg-rumourslist {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .ecl-pg-rumourslist ul li {
+    list-style: disc;
+    padding: 0 0 20px;
+    font-size: 1em;
+  }
 }
