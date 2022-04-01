@@ -279,6 +279,7 @@
 								<p class="font-lato font-lato__i ecl-profile-box-header-data-ttl">Profile</p>
 								<p class="ecl-profile-box-header-data-post">弁護士</p>
 								<p class="ecl-profile-box-header-data-name">小野 智博</p>
+								<p class="ecl-profile-box-header-data-post">東京弁護士会所属</p>
 							</div>
 						</div>
 						<div class="ecl-profile-box-message">
@@ -298,6 +299,7 @@
 								<p class="font-lato font-lato__i ecl-profile-box-header-data-ttl">Profile</p>
 								<p class="ecl-profile-box-header-data-post">弁護士</p>
 								<p class="ecl-profile-box-header-data-name">藤井 総</p>
+								<p class="ecl-profile-box-header-data-post">第一東京弁護士会所属</p>
 							</div>
 						</div>
 						<div class="ecl-profile-box-message">

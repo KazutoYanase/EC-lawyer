@@ -72,7 +72,7 @@
 		</div>
 
 		<div class="g-footer__logo">
-			<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/logo_name.svg" alt="Tandem Sprint ファースト＆タンデムスプリント法律事務所">
+			<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/logo_name-new2022.svg" alt="Tandem Sprint ファースト＆タンデムスプリント法律事務所">
 		</div>
 
 		<div class="g-footer__address">
