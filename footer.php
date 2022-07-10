@@ -28,6 +28,12 @@
 						越境EC
 					</a>
 				</li>
+				<li>
+					<a href="<?php echo esc_url( home_url('/rumours/') ); ?>">
+						<span class="top-main-visual__list__shoulder">商品の評判を守る</span>
+						誹謗中傷・風評被害対策
+					</a>
+				</li>
 			</ul>
 		</div>
 	</section>
@@ -37,7 +43,7 @@
 			<div class="ecl-footer-client-label"><span>当法律事務所の顧問企業の皆様（一部）</span></div>
 			<div class="ecl-footer-client-img">
 				<ul>
-					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_01.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_02.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_03.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_04.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_06.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_07.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_08.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_09.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_10.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_11.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_13.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_15.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_16.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_17.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_18.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_19.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_20.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_21.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_22.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_23.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_24.png"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_01.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_02.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_03.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_04.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_06.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_07.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_08.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_09.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_10.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_11.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_13.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_15.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_16.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_17.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_18.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_19.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_20.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_21.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_22.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_24.png"></li>
 				</ul>
 			</div>
 		</div>
@@ -52,6 +58,7 @@
 				<dd><a href="<?php echo esc_url( home_url('/check/') ); ?>">ー 契約・規約・広告チェック</a></dd>
 				<dd><a href="<?php echo esc_url( home_url('/response/') ); ?>">ー 行政対応・許認可・債権回収</a></dd>
 				<dd><a href="<?php echo esc_url( home_url('/crossborder/') ); ?>">ー 越境EC</a></dd>
+				<dd><a href="<?php echo esc_url( home_url('/rumours/') ); ?>">ー 誹謗中傷・風評被害対策</a></dd>
 			</dl>
 			<ul class="g-footer__links02">
 				<li><a href="<?php echo esc_url( home_url('#profile') ); ?>">専門家紹介</a></li>
