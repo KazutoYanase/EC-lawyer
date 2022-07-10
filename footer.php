@@ -43,7 +43,25 @@
 			<div class="ecl-footer-client-label"><span>当法律事務所の顧問企業の皆様（一部）</span></div>
 			<div class="ecl-footer-client-img">
 				<ul>
-					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_01.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_02.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_03.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_04.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_06.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_07.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_08.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_09.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_10.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_11.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_13.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_15.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_16.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_17.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_18.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_19.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_20.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_21.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_22.png"></li><li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_24.png"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_01.png" alt="I'llアイル"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_02.png" alt="CROSS MALL"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_03.png" alt="AQUA LEAF"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_04.png" alt="助ネコ"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_06.png" alt="Chatwork"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_07.png" alt="ZOHO"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_08.png" alt="enish"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_09.png" alt="YUIDEA"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_10.png" alt="PLANET"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_11.png" alt="船井総研"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_13.png" alt="テクノア"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_15.png" alt="DATA KIT"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_16.png" alt="CREO"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_17.png" alt="TORA"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_18.png" alt="しんきん情報サービス"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_20.png" alt="herbal-i"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_21.png" alt="GOLF PARTNER"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_22.png" alt="TWIGGY"></li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/clientlogo/clientlogo_24.png" alt="FRONTIER"></li>
 				</ul>
 			</div>
 		</div>
