@@ -113,6 +113,11 @@
   margin-bottom: 30px
 }
 
+.ecl-pg-box h2 span {
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
 .ecl-pg-box h3 {
   text-align: center;
   margin-bottom: 50px
@@ -1764,7 +1769,7 @@ div.wpcf7 .ajax-loader {
   }
 
   .ecl-pg-header h1 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     padding: 0 5%
   }
 
@@ -1806,6 +1811,10 @@ div.wpcf7 .ajax-loader {
     font-size: 2.0rem;
     padding: 0 5%;
     margin-bottom: 5%
+  }
+  
+  .ecl-pg-box h2 span {
+    font-size: 1.6rem;
   }
 
   .ecl-pg-box h3 {

@@ -93,6 +93,7 @@ $page_title = $page->post_title;
 		<h3><span>このサービスをご利用の企業様</span></h3>
 		<div class="ecl-pg-colist">
 			<ul>
+				<!--
 				<li>
 					<div class="ecl-pg-colist-img"><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/logo__sakura.png" alt="さくらフォレスト株式会社"></div>
 					<dl>
@@ -106,6 +107,7 @@ $page_title = $page->post_title;
 						</dd>
 					</dl>
 				</li>
+			-->
 				<li>
 					<div class="ecl-pg-colist-img"><img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/logo__herbal.png" alt="株式会社ハーバルアイ"></div>
 					<dl>
