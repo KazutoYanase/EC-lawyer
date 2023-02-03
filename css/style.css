@@ -2436,6 +2436,7 @@ img {
 }
 .pamphlet .form-btn {
   margin-top: 32px;
+  margin-bottom: 32px;
   text-align: center;
 }
 .pamphlet .form-btn .wpcf7-confirm,
@@ -2530,7 +2531,7 @@ img {
 }
 .top-main-visual__title {
   position: absolute;
-  top: 180px;
+  top: 100px;
   right: 0;
   color: #fff;
   font-size: 1.86rem;
@@ -2663,15 +2664,15 @@ img {
     box-sizing: border-box;
     padding-left: 20px;
     left: auto;
-    font-size: 1rem;
+    font-size: 12.5px;
   }
   .top-main-visual__title .br-sm {
     display: inline-block;
   }
   .top-main-visual__title__em {
-    margin-top: 6px;
-    font-size: 1.8rem;
-    line-height: 1.2;
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 1;
   }
   .top-main-visual__list ul {
     display: block;
@@ -2700,9 +2701,21 @@ img {
   }
 }
 @media screen and (min-width: 630px) and (max-width: 767px) {
+  .top-main-visual__upper {
+    height: 360px;
+    background: url(../img/itbengoshi_sp_top.jpg) no-repeat left bottom;
+    background-size: cover;
+  }
   .top-main-visual__title {
-    top: 40px;
-    width: 295px;
+    top: 15px;
+    width: 100%;
+    right: 0:
+  }
+  .top-main-visual__title {
+    font-size: 15px;
+  }
+  .top-main-visual__title__em {
+    font-size: 24px;
   }
 }
 
@@ -4548,7 +4561,7 @@ ul.cf {
   list-style: none;
 }
 .report__download .report__download__list li {
-  width: 32%;
+  width: 48%;
   box-sizing: border-box;
   margin: 0.666%;
   overflow: hidden;
@@ -4579,7 +4592,7 @@ ul.cf {
 }
 .report__download .report__download__list .img {
   width: 100%;
-  height: 190px;
+  height: auto;
   overflow: hidden;
 }
 .report__download .report__download__list .tx {
@@ -4597,7 +4610,7 @@ ul.cf {
 .report__download .report__download__list p span {
   display: inline-block;
   padding: 8px;
-  background: #033481;
+  background: #ff931e;
   color: #fff;
 }
 .report__download .report__download__list p i {
@@ -4697,7 +4710,7 @@ ul.cf {
   box-sizing: border-box;
   display: inline-block;
   padding: 8px 12px;
-  background: #0B85D2;
+  background: #ff931e;
   text-decoration: none;
   color: #fff;
 }

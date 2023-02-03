@@ -1737,6 +1737,28 @@ div.wpcf7 .ajax-loader {
   font-size: 1.5em;
 }
 
+/* 2023-01-28追加分（トップページ、ファーストビュー内バナー） */
+.hinagata_dl_banner {
+  position: absolute;
+  bottom: 10px;
+  right: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------- SP用 ----------------------------*/
 @media screen and (max-width: 769px) {
   .pc {
     display: none
@@ -2334,7 +2356,7 @@ div.wpcf7 .ajax-loader {
 
   .ecl-sidebar {
     top: auto;
-    bottom: 200px;
+    bottom: 120px;
   }
 
   .ecl-sidebar a {
@@ -2646,5 +2668,16 @@ div.wpcf7 .ajax-loader {
     list-style: disc;
     padding: 0 0 20px;
     font-size: 1em;
+  }
+  
+  /* 2023-01-28追加分（トップページ、ファーストビュー内バナー） */
+  .hinagata_dl_banner {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    width:20%;
+  }
+  .hinagata_dl_banner img {
+    
   }
 }

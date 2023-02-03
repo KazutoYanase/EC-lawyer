@@ -85,6 +85,7 @@
 			</ul>
 			<ul class="g-footer__links03">
 				<li><a href="<?php echo get_post_type_archive_link('news'); ?>">新着情報一覧</a></li>
+				<li><a href="<?php echo get_post_type_archive_link('/report-download'); ?>">レポートダウンロード</a></li>
 				<li><a href="<?php echo esc_url( home_url('/column/') ); ?>">コラム一覧</a></li>
 				<li><a href="<?php echo esc_url( home_url('/inquiry/') ); ?>">お問い合わせ</a></li>
 			</ul>

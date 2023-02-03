@@ -94,6 +94,7 @@
 				<li><a href="<?php echo esc_url( home_url('/interview') ); ?>">依頼企業様事例<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
 				<li><a href="<?php echo esc_url( home_url('/price') ); ?>">料金プラン<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
 				<li><a href="<?php echo esc_url( home_url('/news') ); ?>">新着情報<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+				<li><a href="<?php echo esc_url( home_url('/report-download') ); ?>">レポート<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
 				<li><a href="<?php echo esc_url( home_url('/column') ); ?>">コラム<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
 				<li><a href="<?php echo esc_url( home_url('/inquiry') ); ?>">お問い合わせ<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
 				<li>
@@ -112,6 +113,7 @@
 				<li><a href="<?php echo esc_url( home_url('/interview') ); ?>" class="<?php if ( is_singular('interview') || is_post_type_archive('interview') ) { echo ' active'; } ?>">依頼企業様事例</a></li>
 				<li><a href="<?php echo esc_url( home_url('/price') ); ?>" class="<?php if ( (is_page('price')) && (!is_parent_slug()) ) { echo ' active'; } ?>">料金プラン</a></li>
 				<li><a href="<?php echo esc_url( home_url('/news') ); ?>" class="<?php if ( is_singular('news') || is_post_type_archive('news') ) { echo ' active'; } ?>">新着情報</a></li>
+				<li><a href="<?php echo esc_url( home_url('/report-download') ); ?>" class="<?php if ( is_singular('reportdownload') || is_post_type_archive('reportdownload') ) { echo ' active'; } ?>">レポート</a></li>
 				<li><a href="<?php echo esc_url( home_url('/column') ); ?>" class="<?php if ( is_single() && !is_singular('interview') &&is_singular('news') ||   is_page('column') ) { echo ' active'; } ?>">コラム</a></li>
 				<li><a href="<?php echo esc_url( home_url('/inquiry') ); ?>" class="<?php if ( is_page('inquiry') ) { echo ' active'; } ?>">お問い合わせ</a></li>
 			</ul>

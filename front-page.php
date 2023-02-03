@@ -12,6 +12,18 @@
 					弁護士がサポート
 				</div>
 			</h1>
+			<div class="hinagata_dl_banner">
+				<div>
+					<a href="https://gihyo.jp/book/2023/978-4-297-13265-1" target="_blank"  rel="noopener noreferrer">
+						<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/banner_book.jpg">
+					</a>
+				</div>
+				<div style="padding-top: 5px;">
+					<a href="<?php echo esc_url( home_url('/report-download/') ); ?>">
+						<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/banner_dl.jpg">
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="top-main-visual__list">

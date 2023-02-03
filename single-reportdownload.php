@@ -22,15 +22,19 @@
 				</p>-->
 			</div>
 			<h1 class="article__header__title"><?php the_title(); ?></h1>
+			<!--
 			<p class="article__header__name">
 				<span class="font-lato font-lato__b">by</span> <?php the_author(); ?>
 			</p>
+			-->
 		</div>
 
         <?php $report_download_pdf = get_field('attached_pdf'); ?>
 		<div class="article__body">
 		    <div class="img-thum">
+<!--
 		        <p class="link-pdf"><a href="<?php echo site_url().'/wp-content/uploads/report-download-pdf/'.$report_download_pdf; ?>" target="_blank">レポートはこちら&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+-->
 		        <figure><?php
             $image_id = get_post_thumbnail_id();
             $image_url = wp_get_attachment_image_src($image_id, true);
@@ -44,9 +48,14 @@
 		        </div>
 		        <div class="main-box">
 		            <?php the_content(); ?>
+<!--
 		            <p class="link-pdf"><a href="<?php echo site_url().'/wp-content/uploads/report-download-pdf/'.$report_download_pdf; ?>" target="_blank">レポートはこちら&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+-->
 		        </div>
 		    </section>
+			<div class="link-pdf">
+				<a href="<?php echo site_url().'/wp-content/uploads/report-download-pdf/'.$report_download_pdf; ?>" target="_blank">ID/パスワードを入力してダウンロードする&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			</div>
 		</div>
 
 		<div class="article__footer">
