@@ -382,6 +382,13 @@
 								<dd>保有資格：行政書士</dd>
 							</dl>
 						</li>
+						<li class="staff__item">
+							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_taoka.png" alt="" width="120" height="120">
+							<dl>
+								<dt>田岡 駿介</dt>
+								<dd>保有資格：司法書士・<br class="pc">行政書士</dd>
+							</dl>
+						</li>
 					</ul>
 					<h2 class="section-title">
 						<span class="font-lato font-lato__bold-i">Associate</span>
@@ -417,13 +424,6 @@
 							</dl>
 						</li>
 						<li class="staff__item">
-							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_masae-kumano.png" alt="" width="120" height="120">
-							<dl>
-								<dt>熊野 雅恵</dt>
-								<dd>保有資格：行政書士</dd>
-							</dl>
-						</li>
-						<li class="staff__item">
 							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_noriko-ando.png" alt="" width="120" height="120">
 							<dl>
 								<dt>安齋 紀子</dt>
@@ -441,13 +441,6 @@
 							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_hidenori-kadosawa.png" alt="" width="120" height="120">
 							<dl>
 								<dt>門澤 秀徳</dt>
-								<dd>保有資格：行政書士</dd>
-							</dl>
-						</li>
-						<li class="staff__item">
-							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_aki-mizno.png" alt="" width="120" height="120">
-							<dl>
-								<dt>水野 亜紀</dt>
 								<dd>保有資格：行政書士</dd>
 							</dl>
 						</li>
@@ -508,9 +501,16 @@
 							</dl>
 						</li>
 						<li class="staff__item">
-							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_wada.png" alt="" width="120" height="120">
+							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_yoneyama.png" alt="" width="120" height="120">
 							<dl>
-								<dt>和田 壮平</dt>
+								<dt>米山 健一</dt>
+								<dd>保有資格：行政書士</dd>
+							</dl>
+						</li>
+						<li class="staff__item">
+							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_kimura_miho.png" alt="" width="120" height="120">
+							<dl>
+								<dt>木村 美帆</dt>
 								<dd>保有資格：行政書士</dd>
 							</dl>
 						</li>
