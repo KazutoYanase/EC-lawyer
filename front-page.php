@@ -417,13 +417,6 @@
 							</dl>
 						</li>
 						<li class="staff__item">
-							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_matsumoto.png" alt="" width="120" height="120">
-							<dl>
-								<dt>松本 晃治</dt>
-								<dd>保有資格：行政書士</dd>
-							</dl>
-						</li>
-						<li class="staff__item">
 							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_noriko-ando.png" alt="" width="120" height="120">
 							<dl>
 								<dt>安齋 紀子</dt>
@@ -434,13 +427,6 @@
 							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_takashi-yamamoto.png" alt="" width="120" height="120">
 							<dl>
 								<dt>山本 貴志</dt>
-								<dd>保有資格：行政書士</dd>
-							</dl>
-						</li>
-						<li class="staff__item">
-							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_hidenori-kadosawa.png" alt="" width="120" height="120">
-							<dl>
-								<dt>門澤 秀徳</dt>
 								<dd>保有資格：行政書士</dd>
 							</dl>
 						</li>
