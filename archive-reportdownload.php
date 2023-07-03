@@ -33,20 +33,91 @@
                 }
             ?>
             <?php
-                $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
-                $args =	array(
-                        'posts_per_page'   => 6,
-                        'orderby'          => 'date',
-                        'order'            => 'DESC',
-                        'post_type'        => 'reportdownload',
-                        'post_status'      => 'publish',
-                        'caller_get_posts' => 1,
-                        'paged'            =>  $paged
-                );
-                $wp_query = new WP_Query($args);
+            $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+            
+            // もっとも日付が古い3つの記事を取得
+            $args_oldest = array(
+                'posts_per_page'   => 3,
+                'orderby'          => 'date',
+                'order'            => 'ASC',
+                'post_type'        => 'reportdownload',
+                'post_status'      => 'publish',
+                'caller_get_posts' => 1,
+            );
+            $oldest_query = new WP_Query($args_oldest);
+            $oldest_posts = $oldest_query->posts;
+            
+            // 最古の3つの記事のIDを取得
+            $oldest_post_ids = array();
+            foreach ($oldest_posts as $oldest_post) {
+                $oldest_post_ids[] = $oldest_post->ID;
+            }
+            
+            $args = array(
+                'posts_per_page'   => 6,
+                'orderby'          => 'date',
+                'order'            => 'DESC',
+                'post_type'        => 'reportdownload',
+                'post_status'      => 'publish',
+                'caller_get_posts' => 1,
+                'paged'            =>  $paged,
+                'post__not_in'     => $oldest_post_ids, // 最古の3つの記事を除外
+            );
+            $wp_query = new WP_Query($args);
             ?>
+            
+            <?php if ($wp_query->have_posts()) : ?>
+                <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+                    <!-- 記事の表示コードを記述 -->
+                    <!-- ... -->
+                <?php endwhile; ?>
+            <?php endif; ?>
+
 
             <ul class="report__download__list">
+                
+                <?php if($paged < 2): ?>
+                
+                <li>
+                    <a href="https://ec-lawyer.com/report-download/dl-rk/">
+                        <div class="inner">
+                            <dl>
+                                <dd class="img">
+                                    <img src="https://ec-lawyer.com/wp-content/uploads/2023/01/DL-riyokiyaku.png" width="100%" height="auto">
+                                </dd>
+                                <dd class="tx"><time class="font-lato">　</time></dd>
+                            </dl>
+                            <p class="align-r"><span>詳細を見る<i class="fa fa-angle-right" aria-hidden="true"></i></span></p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://ec-lawyer.com/report-download/dl-pp/">
+                        <div class="inner">
+                            <dl>
+                                <dd class="img">
+                                    <img src="https://ec-lawyer.com/wp-content/uploads/2023/01/DL-privacypolicy.png" width="100%" height="auto">
+                                </dd>
+                                <dd class="tx"><time class="font-lato">　</time></dd>
+                            </dl>
+                            <p class="align-r"><span>詳細を見る<i class="fa fa-angle-right" aria-hidden="true"></i></span></p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://ec-lawyer.com/report-download/dl_mishukin/">
+                        <div class="inner">
+                            <dl>
+                                <dd class="img">
+                                    <img src="https://ec-lawyer.com/wp-content/uploads/2023/04/DL-mishukin.png" width="100%" height="auto">
+                                </dd>
+                                <dd class="tx"><time class="font-lato">　</time></dd>
+                            </dl>
+                            <p class="align-r"><span>詳細を見る<i class="fa fa-angle-right" aria-hidden="true"></i></span></p>
+                        </div>
+                    </a>
+                </li>
+                <?php endif; ?>
 
                 <?php
                 while ($wp_query->have_posts()) : $wp_query->the_post();
@@ -56,9 +127,7 @@
                     <a href="<?php the_permalink() ?>">
                         <div class="inner">
                             <dl>
-                                <dt>
-                                    <h3><?php the_title(); ?></h3>
-                                </dt>
+                                <!--<dt><h3><?php the_title(); ?></h3></dt>-->
                                 <dd class="img">
                                     <?php
                             $image_id = get_post_thumbnail_id();

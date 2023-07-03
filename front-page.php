@@ -300,7 +300,8 @@
 						2008年に弁護士としてユアサハラ法律特許事務所に入所。2012年に米国カリフォルニア州に赴任し、 Yorozu Law Group (San Francisco) 及び Makman and Matz LLP (San Mateo) にて、米国に進出する日本企業へのリーガルサービスを専門として、経験を積む。<br>
 						2014年に帰国。カリフォルニアで得た経験を活かし、日本企業の海外展開支援に本格的に取り組む。2017年に米国カリフォルニア州法人TandemSprint, Inc.の代表取締役に就任し、米国への進出支援を事業化する。<br>
 						2018年に弁護士法人ファースト＆タンデムスプリント法律事務所を開設。世界市場で戦う日本企業をビジネスと法律の両面でサポートしている。<br>
-						ウェブ通販・EC事業については特に強みがあり、事業の立上げ・運営・販売促進・トラブル対応・海外展開まで、一貫してサポートできる体制を整えている。
+						ウェブ通販・EC事業については特に強みがあり、事業の立上げ・運営・販売促進・トラブル対応・海外展開まで、一貫してサポートできる体制を整えている。<br>
+						高橋株式会社社外取締役、株式会社フロンティア社外監査役、株式会社サムシングファン社外監査役
 					</div>
 				</div>
 
@@ -497,6 +498,20 @@
 							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_kimura_miho.png" alt="" width="120" height="120">
 							<dl>
 								<dt>木村 美帆</dt>
+								<dd>保有資格：行政書士</dd>
+							</dl>
+						</li>
+						<li class="staff__item">
+							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_otomo.png" alt="" width="120" height="120">
+							<dl>
+								<dt>大友 美果</dt>
+								<dd>保有資格：行政書士</dd>
+							</dl>
+						</li>
+						<li class="staff__item">
+							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_tomita.png" alt="" width="120" height="120">
+							<dl>
+								<dt>冨田 まゆ子</dt>
 								<dd>保有資格：行政書士</dd>
 							</dl>
 						</li>
