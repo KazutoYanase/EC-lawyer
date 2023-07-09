@@ -24,6 +24,11 @@
 					</a>
 				</div>
 			</div>
+			<div class="seminar_banner">
+				<a href="<?php echo esc_url( home_url('/lp/') ); ?>" target="_blank">
+					<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/bnr_seminar.png">
+				</a>
+			</div>
 		</div>
 	</div>
 	<div class="top-main-visual__list">
