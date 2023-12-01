@@ -479,13 +479,6 @@
 							</dl>
 						</li>
 						<li class="staff__item">
-							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_yano.png" alt="" width="120" height="120">
-							<dl>
-								<dt>矢野 尚美</dt>
-								<dd>保有資格：行政書士</dd>
-							</dl>
-						</li>
-						<li class="staff__item">
 							<img src="<?php echo esc_url( get_template_directory_uri()) ; ?>/img/prof_tominaga.png" alt="" width="120" height="120">
 							<dl>
 								<dt>冨永 敬子</dt>
